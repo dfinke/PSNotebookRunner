@@ -25,3 +25,13 @@ foreach ($index in 'SNP', 'GOLD', 'SSE', 'HANGSENG', 'NIKKEI') {
         -OutputNotebook ('basic_{0}.ipynb' -f $index)
 }
 ```
+
+_result_
+
+Creates these notebooks with results from the execution.
+
+- basic_GOLD.ipynb
+- basic_HANGSENG.ipynb
+- basic_NIKKEI.ipynb
+- basic_SNP.ipynb
+- basic_SSE.ipynb

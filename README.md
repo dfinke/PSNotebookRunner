@@ -12,7 +12,7 @@ $index = !$index ? "SNP" : $index
 $csvFilename = "$($pwd.path)/exenb/datadir/{0}.csv" -f $index
 $records = import-csv $csvFilename
 
-"$index record count: $($records.count+1)"
+"$index record count: $($records.count)"
 ```
 
 _runner.ps1_

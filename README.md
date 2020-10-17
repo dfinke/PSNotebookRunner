@@ -2,6 +2,10 @@
 
 One notebook, multiple experiments.
 
+You need the `PowerShellNotebook` module installed for this to work. `Install-Module -Name PowerShellNotebook`
+
+## Overview
+
 Parameterize the _basic.ipynb_ notebook with `$index`. It creates a new notebook with the `$index` in the name and reads a `csv` file based on the `$index`.
 
 _basic.ipynb_

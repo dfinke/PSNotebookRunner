@@ -1,10 +1,11 @@
-# The Runner
+# The Runners
 
 One notebook, multiple experiments.
 
 You need the `PowerShellNotebook` module installed for this to work. `Install-Module -Name PowerShellNotebook`
 
-## Overview
+## CSV Runner
+### Overview
 
 Parameterize the _basic.ipynb_ notebook with `$index`. It creates a new notebook with the `$index` in the name and reads a `csv` file based on the `$index`.
 
@@ -39,3 +40,28 @@ Creates these notebooks with results from the execution.
 - basic_NIKKEI.ipynb
 - basic_SNP.ipynb
 - basic_SSE.ipynb
+
+## XLRunner
+### Overview
+
+The `readExcel.ipynb` notebook takes a required parameter an `xlfile` and two optional parameters `sheetName` and `itemName`.
+
+`sheetName` defaults to the sheet name `one` in the notebook.
+
+For example.
+
+```powershell
+$params = @{
+    xlfile   = (Resolve-Path ".\datadir\excelData.xlsx").Path
+    itemName = 'hammer'
+}
+
+Invoke-ExecuteNotebook -InputNotebook .\readExcel.ipynb -Parameters $params
+```
+
+```
+Region Item   TotalSold
+------ ----   ---------
+East   hammer        51
+South  hammer        18
+```

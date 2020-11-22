@@ -1,6 +1,6 @@
 # The Runners
 
-One jupyter notebook, multiple experiments.
+One PowerShell Jupyter Notebook, multiple experiments.
 
 Simple experimentation with jupyter, PowerShell `Invoke-ExcecuteNotebook`, and parameters.
 

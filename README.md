@@ -1,6 +1,8 @@
 # The Runners
 
-One notebook, multiple experiments.
+One jupyter notebook, multiple experiments.
+
+Simple experimentation with jupyter, PowerShell `Invoke-ExcecuteNotebook`, and parameters.
 
 You need the `PowerShellNotebook` module installed for this to work. `Install-Module -Name PowerShellNotebook`
 
